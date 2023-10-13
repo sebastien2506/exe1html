@@ -30,11 +30,11 @@ les fichier non suivi sont en rouge.
 
 seul les fichiers en **staging** seront sauves
 
-```bash
+``` bash
 git commit -m "message du commit"
-```
+
 un commit est une sauvegarde , on peux y acceder
-avec un `git log` (affichage des identifiants des sauvegardes
+avec un `git log`(affichage des identifiants des sauvegardes
 et `git show` (sans parametre,affichage du dernier commit)
 
 ##pour ajouter tout les fichiers en staging
@@ -50,7 +50,7 @@ de ce type: hhtp//: github.com /votre username /le project
 
 nous creons un new repository, puis nous copions la clefs ssh 
 
-git@github.com:OnlyPassionCode/exo01html.git
+git@github.com:sebastien2506git@github.com:sebastien2506/exe1html.git/exo1html.git
 
 nous retournons dans notre console :
 
@@ -62,4 +62,28 @@ pour voir si ca fonctionne:
 ```bash 
 git remote -v
 
+
+## envoi du projet
+
+```bash
+git push origin main 
+```
+##recuperation du projet 
+
+si on souhaite recupere que le `.git`(donc l'historique sans les fichiers
+
+```bash
+git fetch origin main
+
+si on souhaite recupere toute la branche `main`
+
+```bash 
+git pull origin main 
+```
+
+Si on a effectué des modifications en local non voulues ne permettant pas 
+la récupération des fichiers (`merge error`).
+
+On peut utiliser un `git stash` pour faire une pseudo sauvegarde et revenir au dernier commit
+avant de refaire un `git pull`
 
