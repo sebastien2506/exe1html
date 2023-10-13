@@ -30,11 +30,11 @@ les fichier non suivi sont en rouge.
 
 seul les fichiers en **staging** seront sauves
 
-``` bash
+```bash
 git commit -m "message du commit"
-
+```
 un commit est une sauvegarde , on peux y acceder
-avec un `git log`(affichage des identifiants des sauvegardes
+avec un `git log` (affichage des identifiants des sauvegardes
 et `git show` (sans parametre,affichage du dernier commit)
 
 ##pour ajouter tout les fichiers en staging
