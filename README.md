@@ -2,7 +2,7 @@
 
 ## Création d'un dépôt GIT en local
 
-Dans la console, initialisation du dépôt:
+Dans la console, initialisation du dépôt :
 
 ```bash
 git init
